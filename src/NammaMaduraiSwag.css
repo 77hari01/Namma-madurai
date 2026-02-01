@@ -98,7 +98,7 @@ body {
   right: 0;
   bottom: 0;
   pointer-events: auto;
-  z-index: 9999;
+  z-index: 9;
   cursor: pointer;
 }
 
@@ -406,7 +406,6 @@ body {
   position: relative;
   text-align: center;
   max-width: 900px;
-  z-index: 10;
   animation: fadeInUp 1s ease-out;
   width: 100%;
 }
@@ -556,6 +555,8 @@ body {
 }
 
 .hero-ctas {
+  position: relative;
+  z-index: 10;
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -1037,7 +1038,7 @@ body {
 
 /* Presented By Section */
 .presented-by-section {
-  margin-bottom: 3.5rem;
+  margin-bottom: 3.0rem;
 }
 
 .presented-logos {
@@ -1440,6 +1441,8 @@ body {
 }
 
 .ticket-card.popular {
+  z-index: 10;
+  position: relative;
   background: linear-gradient(135deg, #FFD700 0%, #FFA000 100%);
   border-color: var(--primary-gold);
   transform: scale(1.05);
@@ -1585,6 +1588,8 @@ body {
 }
 
 .ticket-cta {
+  z-index: 10;
+  position: relative;
   width: 100%;
   padding: 1rem 2rem;
   background: var(--gradient-hero);
@@ -1712,6 +1717,8 @@ body {
 }
 
 .social-icons {
+  z-index: 10;
+  position: relative;
   display: flex;
   gap: 1.5rem;
   justify-content: center;
@@ -2284,8 +2291,4 @@ body {
   .hero-decoration .party-balloon {
     display: none;
   }
-}
-/*work*/
-button{
-  z-index: 10;
 }
